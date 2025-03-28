@@ -1,0 +1,80 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Container */
+#login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Animated Marquee */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    animation: marquee-scroll 10s linear infinite, color-change 5s infinite alternate;
+}
+
+@keyframes marquee-scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes color-change {
+    0% { color: yellow; }
+    50% { color: red; }
+    100% { color: blue; }
+}
+
+/* Hover Effects */
+.btn:hover {
+    background: #ff4500;
+}
+
+
+}
